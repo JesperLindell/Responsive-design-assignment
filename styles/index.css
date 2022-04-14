@@ -45,31 +45,20 @@ header {
   a {
 
     color: #fff;
-    border-radius: 2px;
-    background-color: crimson;
+    background-color: black;
     text-decoration: none;
-    font-size: 20px;
-    /* margin-left: 30px; */
+    font-size: 24px;
+   
     }
     a:hover {
 
     color: coral;
+   
+   
+    
     }
 
-  /* .nav a {
-    float: right;
-    display: block;
-    text-align: center;
-    text-decoration: none;
   
-  }
-
-  .nav a.active {
-    background-color: coral;
-    color: white;
-
-  }
-   */
   .nav .icon {
     display: none;
   }
@@ -146,11 +135,7 @@ img {
         margin-top: 25px;
     }
 
-    /* header {
-        /* margin-left: 75px; */
-        /* max-width: 614px;
-    } */ 
-
+   
     .logo {
         color: #fff;
         font-family: 'Baloo 2', cursive;
@@ -206,7 +191,7 @@ img {
     
 }
 
-@media screen and (min-width: 970px ) {
+@media screen and (min-width: 1000px ) {
 
     body {
 
@@ -219,10 +204,6 @@ img {
         margin-top: 50px;
     }
 
-    /* header {
-
-        max-width: 410px;
-    } */
 
     .logo {
         font-family: 'Actor';
