@@ -17,7 +17,8 @@ body {
 }
 
 header {
-    height: 36px;
+    /* position: sticky; */
+    min-height: 36px;
     display: flex;
     flex-direction: row;
     align-items:center;
@@ -41,25 +42,40 @@ header {
 .nav {
     overflow: hidden;
   }
-  
-  .nav a {
-    float: left;
+  a {
+
+    color: #fff;
+    border-radius: 2px;
+    background-color: crimson;
+    text-decoration: none;
+    font-size: 20px;
+    /* margin-left: 30px; */
+    }
+    a:hover {
+
+    color: coral;
+    }
+
+  /* .nav a {
+    float: right;
     display: block;
+    text-align: center;
+    text-decoration: none;
   
   }
-  
 
   .nav a.active {
     background-color: coral;
     color: white;
+
   }
-  
+   */
   .nav .icon {
     display: none;
   }
   
   @media screen and (max-width: 600px) {
-    .nav a:not(:first-child) {display: none;}
+    .nav a:not(:only-child) {display: none;}
     .nav a.icon {
       float: right;
       display: block;
@@ -95,17 +111,6 @@ h1 {
 
 }
 
-a {
-
-    color: #fff;
-    border-radius: 5px;
-    text-decoration: none;
-    margin-left: 30px;
-}
-a:hover {
-
-    color: coral;
-}
 
 p {
 
@@ -163,6 +168,16 @@ img {
         max-width: 275px;
     }
 
+    a {
+
+        color: #fff;
+        background-color: #111;
+        border-radius: 5px;
+        font-size: 16px;
+        text-decoration: none;
+        margin-left: 30px;
+    }
+
     h1 {
         margin-top: 228px;
         font-size: 72px;
@@ -217,6 +232,16 @@ img {
 
     nav {
         max-width: 275px;
+    }
+
+    a {
+
+        color: #fff;
+        background-color: #111;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 16px;
+        margin-left: 30px;
     }
 
 
