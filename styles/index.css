@@ -5,6 +5,7 @@ body {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
+    align-items: center;
 }
 
 .container {
@@ -36,6 +37,50 @@ header {
     
     
 }
+
+.nav {
+    overflow: hidden;
+  }
+  
+  .nav a {
+    float: left;
+    display: block;
+  
+  }
+  
+
+  .nav a.active {
+    background-color: coral;
+    color: white;
+  }
+  
+  .nav .icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .nav a:not(:first-child) {display: none;}
+    .nav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .nav.responsive {position: relative;}
+    .nav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .nav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+  
+  
 
 
 h1 {
@@ -77,11 +122,13 @@ p {
 
 }
 
-img {margin-top: 50px;}
+img {
+    max-width: 320px;
+    margin-top: 50px;}
 
 
 
-@media screen and (min-width: 320px ) {
+@media screen and (min-width: 600px ) {
 
     body {
         flex-direction: column;

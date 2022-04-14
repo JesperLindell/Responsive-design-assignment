@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Actor&family=Baloo+2&family=Poppins:wght@500&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./styles/normalize.css" />
     <link rel="stylesheet" href="./styles/index.css" />
     <title>Responsive</title>
@@ -16,10 +17,13 @@
         <header>
 
             <h3 class="logo">Head</h3>
-            <nav>
+            <nav class="nav">
                 <a href="#">Works</a>
                 <a href="#">Services</a>
                 <a href="#">Contacts</a>
+                <a class="icon" onclick="burgerMenu()">
+                    <i class="fa fa-ellipsis-h"aria-hidden="true"></i>
+                    </a>
             </nav>
         </header>
 
@@ -30,9 +34,21 @@
             </p>
         </main>
     </div>
-        <img src="./images/Slider.jpg" alt="Musician">
 
+    <img src="./images/Slider.jpg" alt="Musician">
 
+    <!-- java-script burger nav-->
+
+    <script>
+        function burgerMenu() {
+            let burger = document.getElementById("nav-bar");
+            if (burger.className === "nav") {
+            burger.className += " responsive";
+            } else {
+            burger.className = "nav";
+            }
+        }
+    </script>
   
 
 
